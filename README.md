@@ -2,20 +2,25 @@
 Dockerized container for running the tsx front-end.
 
 - Clone the repository and create a .dockerignore file with the following contents:
+```config.py
 .git
 node_modules
 build
+```
 
-- Build the container
+* Build the container
+```config.py
 sudo docker build . -t tsxreact-docker
-
-- Run the container
+```
+* Run the container
+```config.py
 sudo docker run -p 8001:80 tsxreact-docker
+```
 - Go to the localhost:8001 to see the app
 
-- Other configurations
-Change the localhost url in the app.js component
-Configure with docker-compose 
+* Other configurations
+** Change the localhost url in the app.js component
+** Configure with docker-compose 
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
