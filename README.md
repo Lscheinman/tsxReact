@@ -14,7 +14,7 @@ sudo docker build . -t tsxreact-docker
 ```
 * Run the container
 ```config.py
-sudo docker run -p 8001:80 tsxreact-docker
+sudo docker run -d -p 8001:80 tsxreact-docker
 ```
 - Go to the localhost:8001 to see the app
 
